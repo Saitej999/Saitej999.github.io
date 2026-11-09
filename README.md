@@ -8,23 +8,24 @@ The website source is MIT licensed. Personal career content belongs to Saitej; r
 
 Open `dist/index.html` in a browser, or run `python -m http.server 8080 --directory dist` from this repository and visit http://localhost:8080.
 
-## Add a completed personal project
+## Maintain the project cards
 
-Edit `dist/projects.js` and add an object inside `window.PORTFOLIO_PROJECTS = [...]`:
+The cards in `dist/projects.js` describe source-reviewed public repositories: FinFlow Banking Platform, Ecom, and Wayfinder Travel Planner. To add another project, add an object inside `window.PORTFOLIO_PROJECTS = [...]`:
 
 ```js
 {
   title: "Your verified project title",
   category: "Java & Spring Boot",
-  status: "Completed",
+  status: "Prototype",
   description: "What the implemented application does.",
+  features: ["A verified feature", "Another verified feature"],
   tags: ["Java", "Spring Boot"],
-  repo: "https://github.com/Saitej999/YOUR-REPOSITORY"
-  // Optional: demo, writeup, image, imageAlt, result.
+  repo: "https://github.com/Saitej999/YOUR-REPOSITORY",
+  // Optional: demo, writeup, image, imageAlt, featured.
 }
 ```
 
-Supported categories are **Java & Spring Boot**, **Microservices**, **Banking & Fintech**, **Cloud & DevOps**, **Full Stack**, and **Other Projects**. Cards and filters appear automatically when entries are present. Keep the array empty until a personal project and its description can be verified. Do not add employer or client source code as a public project.
+Supported categories are **Java & Spring Boot**, **Banking & Fintech**, **Full Stack**, **Cloud & DevOps**, and **Other**. Filters appear only for categories with entries. Verify every feature, tag, screenshot, status, and demo URL before adding it. Do not add employer or client source code as a public project.
 
 ## GitHub Pages deployment
 
